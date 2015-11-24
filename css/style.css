@@ -1,0 +1,381 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+html {
+    font-family: 'Lato', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body {
+    padding-top: 60px;
+    overflow-x: hidden;
+}
+
+a {
+    color: #000000;
+}
+
+h1 {
+    color: #33BBFF;
+    font-size: 80px;
+    font-weight: 400;
+}
+
+h2 {
+    color: #33BBFF;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+hr {
+    width: 40px;
+    height: 6px;
+    background-color: #33BBFF;
+    color: #33BBFF;
+    border: 0 none;
+}
+
+figcaption {
+    background-color: #ffffff;
+    padding: 8%;
+    font-size: small;
+}
+
+/* NAVBAR
+-------------------------------------------------- */
+
+.navbar-fixed-top {
+    background-color: white;
+}
+
+.navbar-toggle {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+    padding: 10px;
+}
+
+.navbar.stuck .navbar-top {
+    margin-top: -30px;
+}
+
+.navbar-toggle .icon-bar {
+    border: solid 1px #fff;
+}
+
+/* LANDING SCREEN
+-------------------------------------------------- */
+
+.large-scroll {
+    margin: 62% 0 0 5%;
+}
+
+.info {
+    width: 60%;
+    float: right;
+    margin: 0 5% 15% 5%;
+}
+
+.hr1 {
+    margin-top: 23%;
+    margin-left: 35%;
+}
+
+/* PARALLAX
+-------------------------------------------------- */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+section.module:last-child {
+    margin-bottom: 0;
+}
+
+section.module.parallax {
+    height: 350px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section.module.parallax-1 {
+    background-image: url("../img/header_photo.jpg");
+}
+
+section.module.parallax-2 {
+    background-image: url("../img/parallax_photo.jpg");
+    height: 650px;
+}
+
+.white {
+    background-color: #ffffff;
+    z-index: 9999;
+    width: 100%;
+}
+
+/* DATA SECTION
+-------------------------------------------------- */
+.data-section {
+    width: 100%;
+    height: 550px;
+    background-color: #404041;
+}
+
+.stats {
+    color: #ffffff;
+    height: 33%;
+    width: 400px;
+    position: relative;
+}
+
+#stat1 {
+    margin-top: 50px;
+}
+
+#stat2 {
+    margin: 145px;
+}
+
+.image {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.stat-text {
+    z-index: 100;
+    position: absolute;
+    color: white;
+    font-size: 11px;
+    left: 10%;
+    top: 50px;
+    text-align: center;
+}
+
+.stat-text span {
+    font-size: 25px;
+}
+
+#stat-title {
+    margin-top: 45%;
+}
+
+.stat-info {
+    color: #ffffff;
+    float: left;
+}
+
+.hr2 {
+    margin-left: 0;
+}
+
+/* CARD SECTION
+-------------------------------------------------- */
+.card-section {
+    background-color: #F2F2F2;
+    padding: 5% 0 45% 0;
+}
+
+.carousel-inner > .item.active,
+.carousel-inner > .item.next.left,
+.carousel-inner > .item.prev.right,
+.carousel-inner > .item.active.left,
+.carousel-inner > .item.prev,
+.carousel-inner > .item.active.right,
+.carousel-inner > .item.next {
+    transform: inherit -webkit-transition-duration : 0.8 s; /* Safari */
+    transition-duration: 0.8s;
+}
+
+.middle {
+    -moz-transition: all 3s ease-out;
+    transform: scale(1.1);
+    -webkit-box-shadow: 1px 5px 31px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 5px 31px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 5px 31px -5px rgba(0, 0, 0, 0.75);
+}
+
+.carousel-inner > .item.next,
+.carousel-inner > .item.active.right {
+    left: 0;
+    -webkit-transform: translate3d(33%, 0, 0);
+    transform: translate3d(33%, 0, 0);
+}
+
+.carousel-inner > .item.prev,
+.carousel-inner > .item.active.left {
+    left: 0;
+    -webkit-transform: translate3d(-33%, 0, 0);
+    transform: translate3d(-33%, 0, 0);
+    opacity: 0.2;
+    -moz-transition: all 0.05s ease-out;
+}
+
+.carousel-inner {
+    overflow: visible;
+}
+
+.fa {
+    font-size: 55px;
+    margin-top: 100%;
+    box-shadow: none;
+}
+
+/* MOBILE SECTION
+-------------------------------------------------- */
+
+.mobile-section {
+    width: 100%;
+    height: 500px;
+    background-color: #ffffff;
+    margin-bottom: 16%;
+}
+
+.grey-box {
+    width: 100%;
+    height: 365px;
+    background-color: #F2F2F2;
+    position: absolute;
+    margin-top: 20%;
+    z-index: 0;
+}
+
+.mobile-info {
+    float: left;
+    margin: 27% -15% 0 44%;
+    font-size: 0.76em;
+    z-index: 999;
+    line-height: 1.2em;
+    position: absolute;
+}
+
+.mobile-img {
+    margin: 25% 0 0 35%;
+    position: absolute;
+}
+
+.m-container {
+    position: relative;
+}
+
+/* FOOTER
+-------------------------------------------------- */
+#footer-logo {
+    margin-top: 30px;
+}
+
+.page-wrap {
+    min-height: 100%;
+    margin-bottom: -90px;
+}
+
+.page-wrap:after {
+    content: "";
+    display: block;
+}
+
+.site-footer, .page-wrap:after {
+    height: 90px;
+}
+
+.site-footer {
+    background-color: #404041;
+    text-align: center;
+}
+
+/* CLEARFIX
+-------------------------------------------------- */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+/* MEDIA QUERIES
+-------------------------------------------------- */
+
+@media (max-width: 762px) {
+    .data-section {
+        height: 930px;
+    }
+
+    #stat-title {
+        margin-top: 58%;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .card-section {
+        height: 200px;
+    }
+
+    .mobile-info {
+        float: left;
+        margin: 20%;
+    }
+
+    .mobile-img {
+        margin: 90% 0 5% 35%;
+        height: 200px !important;
+    }
+
+    section.module.parallax-2 {
+        height: 400px;
+    }
+
+    .hr1 {
+        margin-top: 5%;
+        margin-left: 2%;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    section.module.parallax {
+        height: 50%;
+        background-image: none;
+    }
+
+    .info {
+        width: 100%;
+        padding-left: 8%;
+    }
+
+    .large-scroll {
+        margin: 0;
+    }
+
+    .wow.slideInLeft.stats, .wow.slideInRight.stats, {
+        transition-duration: 0.1s!important;
+    }
+    .grey-box {
+        height: 50%;
+    }
+    #stat1, #stat2, #stat3 {
+        transform: scale(0.8);
+    }
+    .data-section {
+        height: 820px;
+    }
+}
