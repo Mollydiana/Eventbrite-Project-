@@ -24,7 +24,6 @@
     <!-- NAVBAR
     ================================================== -->
     <span id="home"></span>
-
     <div id="nav" class="navbar navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -38,7 +37,6 @@
                          alt="Eventbrite"/>
                 </a>
             </div>
-
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="..">Numbers</a></li>
@@ -116,7 +114,7 @@
                     <div class="item active">
                         <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
                             <figure>
-                                <img src="img/card_photo_1.jpg" class="img-responsive">
+                                <img src="img/card_photo_1%20.jpg" class="img-responsive">
                                 <figcaption>Santa Monica Pier</figcaption>
                             </figure>
                         </div>
@@ -140,7 +138,7 @@
                     <div class="item">
                         <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
                             <figure>
-                                <img src="img/card_photo_1.jpg" class="img-responsive">
+                                <img src="img/card_photo_1%20.jpg" class="img-responsive">
                                 <figcaption>Santa Monica Pier</figcaption>
                             </figure>
                         </div>
@@ -199,7 +197,6 @@
 <footer class="site-footer">
     <img id="footer-logo" src="img/eb_logo_white.png" width="110">
 </footer>
-
 <script src="js/jquery-2.0.2.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script>
@@ -208,19 +205,19 @@
             interval: 99999
         });
         $('.carousel .item').each(function () {
-                var next = $(this).next();
-                if (!next.length) {
-                    next = $(this).siblings(':first');
-                }
-                next.children(':first-child').clone().appendTo($(this));
+            var next = $(this).next();
+            if (!next.length) {
+                next = $(this).siblings(':first');
+            }
+            next.children(':first-child').clone().appendTo($(this));
 
-                if (next.next().length > 0) {
+            if (next.next().length > 0) {
 
-                    next.next().children(':first-child').clone().appendTo($(this));
-                }
-                else {
-                    $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-                }
+                next.next().children(':first-child').clone().appendTo($(this));
+            }
+            else {
+                $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+            }
             $(this).find(':nth-child(2)').find('figure').addClass('middle');
         });
     });

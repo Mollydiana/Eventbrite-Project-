@@ -1,5 +1,6 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
+
 html {
     font-family: 'Lato', sans-serif;
     max-width: 100%;
@@ -264,6 +265,7 @@ section.module.parallax-2 {
 
 /* FOOTER
 -------------------------------------------------- */
+
 #footer-logo {
     margin-top: 30px;
 }
@@ -367,14 +369,17 @@ html[xmlns] .clearfix {
     }
 
     .wow.slideInLeft.stats, .wow.slideInRight.stats, {
-        transition-duration: 0.1s!important;
+        transition-duration: 0.1s !important;
     }
+
     .grey-box {
         height: 50%;
     }
+
     #stat1, #stat2, #stat3 {
         transform: scale(0.8);
     }
+
     .data-section {
         height: 820px;
     }
